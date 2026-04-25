@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catalina Festival</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      background: #f0faf5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      padding: 2rem 1rem;
+    }
+    .container {
+      width: 100%;
+      max-width: 420px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+    .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #1D9E75;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+    }
+    .title { font-size: 22px; font-weight: 600; color: #085041; text-align: center; }
+    .subtitle { font-size: 14px; color: #0F6E56; text-align: center; margin-top: -8px; }
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+    }
+    .badge {
+      background: #9FE1CB;
+      color: #085041;
+      font-size: 12px;
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-weight: 500;
+    }
+    .links {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 0.5rem;
+    }
+    a { text-decoration: none; }
+    .btn {
+      width: 100%;
+      border-radius: 14px;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      cursor: pointer;
+      transition: opacity 0.15s;
+    }
+    .btn:active { opacity: 0.8; }
+    .btn-primary { background: #1D9E75; }
+    .btn-secondary { background: white; border: 1px solid #d0ece3; }
+    .btn-icon { font-size: 22px; width: 28px; text-align: center; }
+    .btn-label { font-size: 15px; font-weight: 600; }
+    .btn-desc { font-size: 12px; margin-top: 1px; }
+    .btn-primary .btn-label { color: white; }
+    .btn-primary .btn-desc { color: #9FE1CB; }
+    .btn-secondary .btn-label { color: #085041; }
+    .btn-secondary .btn-desc { color: #0F6E56; }
+    .btn-arrow { margin-left: auto; font-size: 18px; }
+    .btn-primary .btn-arrow { color: white; }
+    .btn-secondary .btn-arrow { color: #1D9E75; }
+    .info-card {
+      width: 100%;
+      background: white;
+      border: 1px solid #d0ece3;
+      border-radius: 14px;
+      padding: 16px 20px;
+    }
+    .info-title { font-size: 13px; font-weight: 600; color: #085041; margin-bottom: 10px; }
+    .info-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      padding: 4px 0;
+      border-bottom: 0.5px solid #e1f5ee;
+    }
+    .info-row:last-child { border-bottom: none; }
+    .info-key { color: #0F6E56; }
+    .info-val { color: #085041; font-weight: 500; }
+    .footer { font-size: 11px; color: #5DCAA5; margin-top: 0.5rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="avatar">⚽</div>
+    <p class="title">Catalina Festival</p>
+    <p class="subtitle">Turnamen Futsal 2025</p>
+
+    <div class="badges">
+      <span class="badge">28–29 Juni 2025</span>
+      <span class="badge">Cluster Catalina</span>
+      <span class="badge">Usia 15–17 tahun</span>
+    </div>
+
+    <div class="links">
+
+      <a href="https://forms.gle/PCXfDPMKxdWWqZpA8">
+        <div class="btn btn-primary">
+          <span class="btn-icon">📋</span>
+          <div>
+            <p class="btn-label">Daftar Sekarang</p>
+            <p class="btn-desc">Isi form pendaftaran tim</p>
+          </div>
+          <span class="btn-arrow">›</span>
+        </div>
+      </a>
+
+      <a href="https://wa.me/[NOMOR_WA]">
+        <div class="btn btn-secondary">
+          <span class="btn-icon">💬</span>
+          <div>
+            <p class="btn-label">Hubungi Panitia</p>
+            <p class="btn-desc">Chat via WhatsApp</p>
+          </div>
+          <span class="btn-arrow">›</span>
+        </div>
+      </a>
+
+      <a href="https://instagram.com/Catalina Festival">
+        <div class="btn btn-secondary">
+          <span class="btn-icon">📸</span>
+          <div>
+            <p class="btn-label">Instagram</p>
+            <p class="btn-desc">@Catalina Festival</p>
+          </div>
+          <span class="btn-arrow">›</span>
+        </div>
+      </a>
+
+      <div class="info-card">
+        <p class="info-title">Info Event</p>
+        <div class="info-row">
+          <span class="info-key">Tanggal</span>
+          <span class="info-val">28–29 Juni 2025</span>
+        </div>
+        <div class="info-row">
+          <span class="info-key">Tempat</span>
+          <span class="info-val">Cluster Catalina</span>
+        </div>
+        <div class="info-row">
+          <span class="info-key">Kategori</span>
+          <span class="info-val">Usia 15–17 tahun</span>
+        </div>
+        <div class="info-row">
+          <span class="info-key">Biaya daftar</span>
+          <span class="info-val">Rp 500.000 / tim</span>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="footer">Catalina Festival 2025</p>
+
+  </div>
+</body>
+</html>
